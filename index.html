@@ -1,11 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>Inicio</title>
 </head>
+
 <body>
-    
+    <nav class="navbar">
+        <ul>
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./html/menu.html">Menu</a></li>
+        </ul>
+    </nav>
+    <main>
+
+        <section class="video">
+            <h1>Bienvenidos a la cafeteria delicia</h1>
+
+            <video width="500" height="300" controls>
+                <source src="./media/videoCafeteria.mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <section class="info">
+            <div class="nuestra-historia">
+                <h2>Nuestra historia</h2>
+                <p>Desde 1998, Cafeteria Delicia ha brindado las mejores sabores y aromas</p>
+                <img src="./media/caferetia.png" alt="Cafeteria Delicia">
+            </div>
+
+            <div class="opiniones">
+                <h2>Opiniones de nuestros clientes</h2>
+                <p><span>Juan perez:</span> "El mejor cafe que he probado"</p>
+                <p><span>Maria Lopez:</span> "Ambiente acogedor y excelente atencion"</p>
+                <p><span>Juan perez:</span> "Definitivamente mi lugar favorito para trabajar y tomar un cafe"</p>
+            </div>
+        </section>
+
+        <section class="form">
+            <h2>Dejanos tu opinion</h2>
+            <form action="/my-handling-form-page" method="post">
+
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="user_name" />
+
+                <label for="msg">Comentario:</label>
+                <textarea id="msg" name="user_message"></textarea>
+
+                <button type="submit">Enviar</button>
+
+            </form>
+        </section>
+
+        <footer class="footer">
+            <p>2025 Cafeteria deliciosa - Todos los derechos reservados</p>
+        </footer>
+    </main>
 </body>
+
 </html>
